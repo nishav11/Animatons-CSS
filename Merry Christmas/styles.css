@@ -1,0 +1,167 @@
+body {
+    background: #171d22;
+    margin: 0;
+}
+
+h2 {
+     font-family: 'Mountains of Christmas', cursive;
+     position: absolute;
+     padding: 0;
+     font-size: 60px;
+     letter-spacing: 0.1em;
+     color: #4776E6;
+     text-shadow:  4px 4px 2px rgba(150, 150, 150, 0.3);
+     margin-bottom: 200px;
+     margin-left: 390px;
+     text-align: center;
+     top: -100px;
+     cursor: pointer;
+}
+.img {
+	position: relative;
+    width: 200px;
+    height: 300px;
+    top: 170px;
+    padding: 0;
+    margin: 0;
+    left: 170px;
+    
+}
+
+.panel {
+	list-style-type: none;
+    
+}
+
+.panel div {
+   width: 80%;
+    text-align: center;
+    line-height: 0
+   
+    
+}
+
+#lights {
+    
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    top: -80px;
+    border-bottom: 3px solid #222;
+    height: 100px;
+}
+
+#lights li {
+	position: relative;
+    list-style: none;
+    margin: 0 15px;
+    padding: 0;
+    display: inline-block;
+    width: 15px;
+    height: 30px;
+    border-radius: 50%;
+    top: 102px;
+    background: #fff;
+    animation-name: even-flash;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    
+}
+
+#lights li:before {
+	content: "";
+    position: absolute;
+    width: 14px;
+    height: 7px;
+    border-radius: 4px;
+    top: -5px;
+    left: 1px;
+    background: #444;
+}
+
+
+#lights li:nth-child(odd) {
+	animation-name: odd-flash;
+}
+
+
+/* Panel animation */
+
+.panel div.back {
+    transform: rotateY(90deg);
+}
+
+.panel div.front{
+	position: absolute;
+}
+
+.panel li:hover div.front {
+	animation: twirl 0.2s ease-in forwards;
+}
+
+.panel li:hover div.back {
+	animation: twirl 0.2s ease-out forwards reverse;
+    
+}
+
+@keyframes twirl {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(90deg);
+    }
+}
+
+
+
+/* Lights Animation */
+@keyframes even-flash {
+    0%,
+    100% {
+        background: rgba(33, 65, 245, 1);
+        box-shadow: 0px 2px 20px 4px rgba(33, 65, 245, 1)
+    }
+    50% {
+        background: rgba(33, 65, 245, 0.5);
+        box-shadow: 0px 2px 20px 4px rgba(33, 65, 245, 0.5);
+    }
+    
+}
+
+@keyframes odd-flash {
+    
+    50% {
+        background: rgba(255, 0, 204, 1);
+        box-shadow: 0px 2px 20px 4px rgba(255, 0, 204, 1);
+    }
+    0%,
+    100% {
+        background: rgba(255, 0, 204, 0.5);
+        box-shadow: 0px 2px 20px 4px rgba(255, 0, 204, 0.5);
+    }
+}
+
+.cr {
+	color: #4776E6;
+    display: block;
+    position: relative;
+}
+
+ h5 {
+     text-align: right;
+     margin: 0;
+     padding-top: 300px;
+     padding-right: 5px;
+     
+}
+h6 {
+     text-align: right;
+     margin: 0;
+     padding-right: 5px;
+    
+}
+

@@ -1,0 +1,37 @@
+body {
+    background: url(images/marcela-laskoski-118684.jpg) no-repeat;
+    background-size: cover;
+}
+
+body {
+    background: url(images/andrik-langfield-petrides-270368.jpg) no-repeat;
+    background-size: cover;
+}
+
+.love {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: crimson;
+    transform: translate(-50%, -50%);
+    animation: typing 4s steps(14);
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: consolas;
+    border-right: 2px solid #fff;
+    
+    
+}
+
+@keyframes typing {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 14ch;
+    }
+}
